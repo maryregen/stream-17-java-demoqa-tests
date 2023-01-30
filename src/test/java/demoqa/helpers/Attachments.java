@@ -43,7 +43,7 @@ public class Attachments {
                 + "' type='video/mp4'></video></body></html>";
     }
     public static URL getVideoUrl(String sessionId) {
-        String videoUrl = System.getProperty("base_url", "${BASE_URL}") + "video/" + sessionId + ".mp4";
+        String videoUrl = System.getProperty("baseUrl") + "video/" + sessionId + ".mp4";
 
         try {
             return new URL(videoUrl);
